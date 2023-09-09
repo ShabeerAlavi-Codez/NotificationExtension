@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Notification Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension with notifications and alarms",
+   "offline_enabled" : true,
+  "permissions": ["alarms", "notifications","storage"], 
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title":"Notification Extension",
+    "default_icon": {
+      "16": "images/16ico.png",
+      "48": "images/48ico.png",
+      "128": "images/128ico.png"
+    }
+  },
+  "icons": {
+    "16": "images/16ico.png",
+    "48": "images/48ico.png",
+    "128": "images/128ico.png"
+
+  }
+}
